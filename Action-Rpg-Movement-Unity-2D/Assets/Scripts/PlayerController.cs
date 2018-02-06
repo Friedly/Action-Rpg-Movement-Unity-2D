@@ -21,7 +21,11 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate ()
     {
-        rigidBody.MovePosition(rigidBody.position + input.normalized * moveSpeed);
+        
+        Debug.Log("Normalized:" + input.normalized);
+        Debug.Log("Clamped:" + Vector2.ClampMagnitude(input, 1f));
+        input = Vector2.ClampMagnitude(input, 1f);
+        rigidBody.MovePosition(rigidBody.position + input * moveSpeed);
         //rigidBody.AddForce(input * moveSpeed, ForceMode2D.Force);
     }
 }
