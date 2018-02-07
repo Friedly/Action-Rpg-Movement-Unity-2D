@@ -22,7 +22,7 @@ public class FollowGameObject : MonoBehaviour {
         }
      }
 
-    void Update ()
+    void LateUpdate ()
     {
         position = goToFollow.transform.position;
         position.z = -10;

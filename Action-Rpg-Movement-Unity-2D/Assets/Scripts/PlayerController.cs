@@ -21,11 +21,12 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate ()
     {
-        
-        Debug.Log("Normalized:" + input.normalized);
-        Debug.Log("Clamped:" + Vector2.ClampMagnitude(input, 1f));
+        //Test this for joystick analog controls whether it feels better to remap the low/mid range.
+        //input.x = Mathf.Pow(input.x, 2f) * Mathf.Sign(input.x);
+        //input.y = Mathf.Pow(input.y, 2f) * Mathf.Sign(input.y);
+
+        //Does this work with the remapping?
         input = Vector2.ClampMagnitude(input, 1f);
         rigidBody.MovePosition(rigidBody.position + input * moveSpeed);
-        //rigidBody.AddForce(input * moveSpeed, ForceMode2D.Force);
     }
 }
