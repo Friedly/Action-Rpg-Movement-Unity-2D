@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50547637716249124}
   - component: {fileID: 58107624753558468}
   - component: {fileID: 114830972193940548}
+  - component: {fileID: 95364818121025006}
   m_Layer: 0
   m_Name: 8DirectionalMovementPlayer
   m_TagString: Untagged
@@ -78,6 +79,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.45
+--- !u!95 &95364818121025006
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1584771371385034}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09becd68da886174a8d9295b2e20d61c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114830972193940548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,6 +108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
+  allowDiagonalSpeedUp: 0
+  animationSpeed: 1
+  minAnimationSpeed: 0.1
 --- !u!212 &212037690424832988
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -124,7 +145,7 @@ SpriteRenderer:
   m_SortingLayerID: 218376939
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ea1c3cc273e5e3d498a66216e63667b3, type: 3}
+  m_Sprite: {fileID: 21300156, guid: f8ae3924bfd97fc49acc2eab7a112bb3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
