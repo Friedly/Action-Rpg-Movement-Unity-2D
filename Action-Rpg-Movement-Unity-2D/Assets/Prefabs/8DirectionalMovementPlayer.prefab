@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212037690424832988}
   - component: {fileID: 50547637716249124}
   - component: {fileID: 58107624753558468}
-  - component: {fileID: 114830972193940548}
   - component: {fileID: 95364818121025006}
+  - component: {fileID: 114453642749629356}
   m_Layer: 0
   m_Name: 8DirectionalMovementPlayer
   m_TagString: Untagged
@@ -96,7 +96,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114830972193940548
+--- !u!114 &114453642749629356
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f7aa545e619cef49b6b57e9b30a657e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.08
+  moveSpeed: 3.5
   allowDiagonalSpeedUp: 0
   animationSpeed: 1
   minAnimationSpeed: 0.1

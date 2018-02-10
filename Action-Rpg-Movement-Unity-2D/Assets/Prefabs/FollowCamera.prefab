@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 20429235045408404}
   - component: {fileID: 124391164365039034}
   - component: {fileID: 81568216997560246}
-  - component: {fileID: 114769494032108270}
+  - component: {fileID: 114973123083176936}
   m_Layer: 0
   m_Name: FollowCamera
   m_TagString: MainCamera
@@ -63,7 +63,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -86,7 +86,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1437820773894400}
   m_Enabled: 1
---- !u!114 &114769494032108270
+--- !u!114 &114973123083176936
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goToFollow: {fileID: 0}
-  followSpeed: 10
+  followSpeed: 5
 --- !u!124 &124391164365039034
 Behaviour:
   m_ObjectHideFlags: 1

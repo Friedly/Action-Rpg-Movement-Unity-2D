@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController2D : MonoBehaviour {
 
     #region Movement
     [Header("Movement")]
@@ -90,6 +90,6 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate ()
     {
-        rigidBody.MovePosition(rigidBody.position + input * moveSpeed);
+        rigidBody.MovePosition(rigidBody.position + input * moveSpeed * Time.fixedDeltaTime);
     }
 }
