@@ -23,7 +23,9 @@ GameObject:
   - component: {fileID: 58959208354825588}
   - component: {fileID: 50985056804437778}
   - component: {fileID: 95077253936183430}
-  - component: {fileID: 114488003670563390}
+  - component: {fileID: 114421593733883228}
+  - component: {fileID: 114993426696718708}
+  - component: {fileID: 114401781233961184}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Monster
@@ -96,7 +98,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114488003670563390
+--- !u!114 &114401781233961184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1073863867977934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9edd64a8b56bcbc4b880a6354846b903, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSpeed: 0.5
+  minAnimationSpeed: 0.1
+  animator: {fileID: 0}
+--- !u!114 &114421593733883228
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -107,10 +123,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7601048f42cbf42b8a9f91c83bd7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
-  animationSpeed: 0.5
-  minAnimationSpeed: 0
-  targetingRange: 3
+  targetTag: Player
+  targetingRange: 2
+  approachRange: 2
+--- !u!114 &114993426696718708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1073863867977934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf79fd0ffd39d254ab73ce15bc6d80f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
+  normalizeDirection: 1
 --- !u!212 &212363253336079776
 SpriteRenderer:
   m_ObjectHideFlags: 1
