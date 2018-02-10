@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-public class PlayerController2D : MonoBehaviour {
-
+public class PlayerController2D : MonoBehaviour
+{
     #region Movement
     [Header("Movement")]
     [Tooltip("(Maximal) Movement speed in unity units per second.")]
