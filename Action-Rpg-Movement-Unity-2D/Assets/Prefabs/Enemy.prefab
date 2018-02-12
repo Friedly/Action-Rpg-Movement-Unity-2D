@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Player
-  targetingRange: 2
-  approachRange: 2
+  targetingRange: 4
+  approachRange: 0.75
 --- !u!114 &114993426696718708
 MonoBehaviour:
   m_ObjectHideFlags: 1
